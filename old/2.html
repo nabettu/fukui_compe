@@ -1,0 +1,64 @@
+
+<head>
+<script src="http://t-tu.com/app/plugin/Maximage/lib/js/jquery.maximage.js"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
+
+
+<style type="text/css">
+.bgmaximage{
+  position:fixed !important;
+//  display:none;
+  z-index: -10;
+  min-height: 100%;
+  min-width: 745px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+ }
+
+#maincontent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.loader { 
+  position:absolute;
+  z-index:9999;
+  width:39px;
+  height:39px;
+  top:49%;
+  left:49%
+}
+</style>
+
+</head>
+<body>
+<img src="loader.gif" class="loader" />
+<img src="photo/image_1.jpg" title="1枚" alt="" class="bgmaximage"/>
+<img src="photo/image_2.jpg" alt="" class="bgmaximage" />
+<img src="photo/image_3.jpg" alt="" class="bgmaximage" />
+<img src="photo/image_4.jpg" alt="" class="bgmaximage" />
+<img src="photo/image_5.jpg" alt="" class="bgmaximage" />
+<div id="maincontent">
+  ここにコンテンツ
+</div>
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$('bgmaximage').maxImage({
+isBackground: true,
+slideShow: true,
+position: 'absolute',
+verticalAlign: 'bottom',
+slideShowTitle: true, //タイトルの有無
+slideDelay:5, //スライドの秒数
+maxFollows: 'height',
+resizeMsg: {show: false}
+});
+});
+</script>

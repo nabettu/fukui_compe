@@ -1,0 +1,186 @@
+    /* Prevents slides from flashing */
+
+html,body { height:100%; }
+
+    body {
+      text-align: center;
+      font-family: MyWebFont;
+    }
+    #slides {
+      display:none;
+    /*  width: 640px;*/
+    }
+
+@font-face {
+   font-family: MyWebFont;
+   src: url('./AoyagiKouzanTOTF.otf') format("opentype");
+}
+
+    .main {
+      /*width: 100%;*/
+      height:100%;
+/*      border: 1px solid #000;*/
+      margin: 0 auto;
+      text-align: center;
+      /*background-color: #000000;*/
+    }
+    .main div {
+      width: 100%;
+/*      border: 1px solid #FF0000;*/
+      margin: 0 auto;
+/*      text-align: center;*/
+    }
+
+
+    .buttons {
+      position: absolute;
+      z-index: 100;      
+    }
+
+    .slidesjs-previous {
+      position: absolute;
+      top:30%;
+      left: 0px;
+/*      left: 8px;*/
+    }
+
+    .slidesjs-next {
+      position: absolute;
+      top:30%;
+      right: 0px;
+/*      right: 8px;*/
+    }
+
+    .arrows {
+      width:60px;
+/*      height:80px;*/
+    }
+      
+    .group_title {
+      display: inline-block;
+      box-shadow: none;
+      width:40%;
+      background-color: #ffffff;
+
+      border: none;
+      color:#000000;
+      font-size: 2.8em;
+      position: absolute;
+      padding: 20px 0px;
+      top:10%;
+      left:0px;
+     }
+
+      
+    .error {
+      z-index: 128;
+      display: inline-block;
+      box-shadow: none;
+
+      background-color: #ffffff;
+
+      border: none;
+      color:#000000;
+      font-size: 2.8em;
+      position: absolute;
+      padding: 20px 0px;
+      top:50%;
+     }
+
+    .loading {
+      z-index: -1;
+      display: inline-block;
+      box-shadow: none;
+
+      background-color: #ffffff;
+
+      border: none;
+      color:#000000;
+      font-size: 2.8em;
+      position: absolute;
+      padding: 20px 0px;
+      top:50%;
+      left:0px;
+     }
+
+    .photo_title {
+        box-shadow: none;
+        display: inline-block;
+        text-align:center;
+        vertical-align: middle;
+        width:100%;
+        padding: 10px 0px;/*
+        margin:0px 10px;*/
+      background-color: #ffffff;
+      border:none;
+
+      color:#000000;
+      font-size: 2.4em;
+      position: absolute;
+      top:90%;
+      left:0px;
+     }
+
+     .funcBtn {
+      display: inline-block;
+      position: absolute;
+      top:60%;
+     }
+
+     .mapBtn {
+      right: 0px;
+      width:60px;
+      height:auto;
+     }
+
+     .aboutBtn {
+      left: 0px;
+      width:60px;
+      height:auto;
+     }
+
+     .modal-header {
+      background-color: #333333;
+      color:#ffffff;
+     }
+
+    .modal-body {
+      background-color: #ffffff;
+      color:#000000;
+     }
+
+     table {
+      width:100%;
+     }
+
+     tr.nowgroup {
+      background-color: #555555;
+      color:#ff5555;
+
+     }
+     td {
+      border: 1px #000000 dotted;
+      font-size: 1.5em;
+     }
+
+     td.no {
+      text-align: right;
+     }
+
+     td.group_name {
+      text-align: center;
+     }
+
+     img.full {
+      width:100%;
+      z-index: 64;
+     }
+
+     p {
+      font-size: 22px;
+     }
+
+     .modal.large {
+      width: 720px;
+      margin-left: -360px; /* - width/2 */
+    }
